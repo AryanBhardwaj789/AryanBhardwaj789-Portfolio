@@ -1,0 +1,1 @@
+let l=document.querySelector(".scrollBtn"),e=document.querySelector("#scrollableDiv");l.addEventListener("click",function(){e.scrollTop=e.scrollHeight,l.style.display="none"});e.addEventListener("scroll",function(){e.scrollTop===0?l.style.display="block":l.style.display="none"});
