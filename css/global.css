@@ -1,0 +1,22 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: blueviolet;
+    background: black;
+}
+
+.overflow-scroll::-webkit-scrollbar { 
+    display: none; 
+} 
+
+
+

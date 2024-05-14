@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeExpressProject</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/coffeemobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Parent -->
+    <div class="h-screen w-full bg-black relative flex overflow-hidden">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="h-full w-32 flex flex-col space-y-10 items-center justify-center relative bg-eminence text-white border-none">
+      <!-- Profile -->
+      <div class="h-24 w-24 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white hover:ease-linear focus:bg-white transition ease-in-out hover:translate-y-1 hover:scale-200 hover:duration-300">
+        <a href="../index.html"><i class="iconoir-home-alt text-6xl"></i></a>
+      </div>
+  
+      <!-- Projects -->
+      <div id="projects" class="h-24 w-24 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white hover:ease-linear focus:bg-white transition ease-in-out hover:translate-y-1 hover:scale-200 hover:duration-300">
+        <a href="./projects.html"></a><i class="iconoir-laptop-dev-mode text-6xl"></i>
+      </div>
+  
+      <!-- Theme -->
+      <div id="theme" class="h-24 w-24 flex items-center justify-center rounded-lg cursor-pointer hover:text-gray-800 hover:bg-white hover:ease-linear focus:bg-white transition ease-in-out hover:translate-y-1 hover:scale-200 hover:duration-300">
+        <a href="./connect.html"><i class="iconoir-yelp text-6xl"></i></a>
+      </div>
+    </aside>
+
+    <!-- Container -->
+    <div class="h-full w-full flex flex-wrap">
+        <img src="../assets/images/BG-Projects-Dark.jpg" class="object-cover inline w-screen h-screen brightness-25" alt="Background-Image">
+        <div id="maindiv" class="absolute w-screen h-screen flex flex-row justify-start items-center space-x-2">
+        <div id="carouseldiv" class="border-double border-4 rounded-lg border-red-800 ml-3 h-3/5 w-5/12">
+
+        <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-full overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/assets/images/Coffee-Express-FX/Coffee-Express-FX-Login.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/assets/images/Coffee-Express-FX/Coffee-Express-FX-Signup.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/assets/images/Coffee-Express-FX/Coffee-Express-FX-Order.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/assets/images/Coffee-Express-FX/Coffee-Express-FX-Billing.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/assets/images/Coffee-Express-FX/Coffee-Express-FX-Receipt.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-eminence dark:bg-eminence group-hover:bg-eminence dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-eminence dark:bg-eminence group-hover:bg-eminence dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+            </div>
+            
+            <div class="border-double border-4 rounded-lg border-red-800 h-4/5 w-[49%] mr-20 space-y-5 p-5 pb-2 overflow-y-scroll overflow-scroll scroll-smooth focus:scroll-auto hover:border-eminence max-lg:w-[40vw] " id="scrollableDiv">
+                <h2 class="font-poppins text-2xl text-white text-center font-bold underline underline-offset-2 decoration-slice selection:bg-purple-950 hover:decoration-teal-200 hover:text-teal-200">Coffee Express
+                    <a href="https://github.com/AryanBhardwaj789/CoffeeExpress" target="_blank">
+                        <i class="iconoir-github-circle text-4xl text-white bg-eminence rounded-full cursor-pointer hover:text-gray-800 hover:bg-white hover:ease-linear focus:bg-white transition ease-in-out hover:translate-y-1 hover:scale-200 hover:duration-300"></i>
+                    </a>
+                </h2>
+                <h2 class="scrollBtn"><i class="iconoir-dot-arrow-down absolute text-4xl text-white bg-eminence rounded-full cursor-pointer bottom-6 ml-[365px] animate-pulse"></i></h2>
+                <p id="content" class="text-white font-poppins text-sm tracking-wide">
+                    <strong class="text-red-600">Coffee Express</strong> is a user-friendly <strong class="text-teal-200">JavaFX</strong> application designed to revolutionize the way coffee lovers order their favorite beverages. 
+                    With an intuitive interface and a plethora of customization options, 
+                    Coffee Express offers a seamless and delightful coffee ordering experience.
+                    <br><br>
+                    <strong class="text-teal-200">Features:</strong><br>
+                    <span class="text-red-600 font-semibold">Customization:</span> Choose from a variety of coffee types, sizes, and toppings to create your perfect cup of coffee. <br>
+                    <span class="text-red-600 font-semibold">Real-time Price Updates:</span> See the price of your order adjust as you make your selections, ensuring transparency and accuracy. <br>
+                    <span class="text-red-600 font-semibold">Multiple Screens:</span> Navigate through different screens, including login, signup, order, payment, and receipt screens, for a smooth ordering process. <br>
+                    <span class="text-red-600 font-semibold">Data Validation:</span> Ensure that your inputs, such as quantity and payment information, are accurate and valid. <br>
+                    <span class="text-red-600 font-semibold">File Handling:</span> Store order details and transaction records for easy access and order history tracking. <br>
+                    <br><br>
+                    <strong class="text-teal-200">Technologies Used:</strong> <br>
+                    <span class="text-red-600 font-semibold">JavaFX:</span> For the frontend user interface and application logic. <br>
+                    <span class="text-red-600 font-semibold">FXML:</span> For defining the application's UI layout. <br>
+                    <span class="text-red-600 font-semibold">File Handling:</span> For storing and managing order details and transaction records. <br>
+                    <span class="text-red-600 font-semibold">Polymorphism:</span> Utilized through interfaces and abstract classes to achieve dynamic behavior. <br>
+                    <br><br>
+                    <strong class="text-teal-200">How to Use:<span class="text-red-600 font-extrabold ml-2">[GITHUB]</span></strong> <br>
+                    To experience Coffee Express, <span class="text-red-600 font-semibold">simply clone the repository and run the Main.java file in your preferred Java IDE.</span>  
+                    Explore the various coffee options, customize your order, and enjoy a freshly brewed cup of coffee in no time! <br>
+                    <br><br>
+                    <strong class="text-teal-200">Future Enhancements:</strong>  <br>
+                    In the future, 
+                    Coffee Express aims to integrate additional features such as user profiles, order history, and loyalty programs to further enhance the user experience. 
+                    Stay tuned for exciting updates!
+                    <br><br>
+                    <strong class="text-teal-200">About the Developers:</strong> <br>
+                    Coffee Express was developed by Aryan Bhardwaj, passionate developer dedicated in creating innovative solutions that simplify everyday tasks and bring joy to users' lives.
+                    <br><br>
+                    <strong class="text-teal-200">Contact Us:</strong> <br>
+                    For <strong>inquiries</strong> or <strong>feedback</strong> regarding Coffee Express, <br>
+                    please feel free to reach out to us at 
+                    <span class="text-blue-300 font-semibold"><a href="mailto:aryanbhardwaj98126@gmail.com">aryanbhardwaj98126@gmail.com</a>
+                    </span>. I'd love to hear from you!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+  <script src="/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
