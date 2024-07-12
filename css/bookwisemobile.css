@@ -4,13 +4,17 @@
     #sidebar {
       position: fixed;
       width: 100%;
-      height: 80px;
+      height: 60px;
       flex-direction: row;
       bottom: 0;
       left: 0;
       z-index: 50;
     }
   
+    #sidebar i {
+      font-size: 3rem;
+    }  
+
     /* Projects */
     #projects {
       margin-top: 0px;
@@ -34,7 +38,7 @@
   
     #carouseldiv {
       width: 90vw;
-      height: 300px;
+      height: 250px;
     }
   
     #default-carousel img {
@@ -52,7 +56,7 @@
     #scrollableDiv {
       margin-top: 15px;
       padding: 10px;
-      max-height: 50vh;
+      max-height: 45vh;
       width: 100%;
       overflow-y: auto;
     }

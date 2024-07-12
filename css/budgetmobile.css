@@ -4,12 +4,16 @@
     #sidebar {
       position: fixed;
       width: 100%;
-      height: 80px;
+      height: 60px;
       flex-direction: row;
       bottom: 0;
       left: 0;
       z-index: 50;
     }
+
+    #sidebar i {
+      font-size: 3rem;
+    }  
   
     /* Projects */
     #projects {
@@ -34,7 +38,7 @@
   
     #carouseldiv {
       width: 55vw;
-      height: 55vh;
+      height: 40vh;
       margin-right: 110px;
     }
   

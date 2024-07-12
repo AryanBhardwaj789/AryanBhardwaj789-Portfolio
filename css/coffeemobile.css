@@ -4,11 +4,15 @@
   #sidebar {
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 60px;
     flex-direction: row;
     bottom: 0;
     left: 0;
     z-index: 50;
+  }
+
+  #sidebar i {
+    font-size: 3rem;
   }
 
   /* Projects */
@@ -49,9 +53,9 @@
 
   /* Scrollable Div */
   #scrollableDiv {
-    margin-top: 30px;
+    margin-top: 18px;
     padding: 10px;
-    max-height: 45vh;
+    max-height: 40vh;
     width: 100%;
     overflow-y: auto;
   }
